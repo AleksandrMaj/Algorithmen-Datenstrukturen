@@ -1,9 +1,12 @@
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FirstTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+class BinTreeImplTest
+{
     @Test
-    public void testJUnit() {
+    public void test()
+    {
         BinTreeImpl tree =
                 new BinTreeImpl(
                         new BinTreeImpl(
