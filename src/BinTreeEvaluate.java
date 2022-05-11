@@ -11,15 +11,16 @@ public class BinTreeEvaluate
         int left = evaluate(bt.getLeft()); //Linker Operand
         int right = evaluate(bt.getRight()); //Rechter Operand
 
-        if (bt.getValue().equals("+"))
-            return left + right;
-
-        if (bt.getValue().equals("-"))
-            return left - right;
-
-        if (bt.getValue().equals("*"))
-            return left * right;
-
-        return left / right;
+        switch(bt.getValue().toString())
+        {
+            case "+":
+                return left + right;
+            case "-":
+                return left - right;
+            case "*":
+                return left * right;
+            default:
+                return left / right;
+        }
     }
 }
